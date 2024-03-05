@@ -10,23 +10,23 @@ void handler::console( void )
     is_running = true;
     while (is_running)
     {
-        std::cout << "Input integer [1;20]: ";
+        std::cout << "Input size integer [1;20]: ";
         std::cin >> n;
         if (n > 0 && n <= 20)
             is_running = false;
         else
-            std::cout << "Invalid size of SLAU";
+            std::cout << "Invalid size of SLAU" << std::endl;
     }
 
     is_running = true;
     while (is_running)
     {
-        std::cout << "Input number greater then 0: ";
+        std::cout << "Input epsylon number greater then 0: ";
         std::cin >> eps;
         if (eps > 0)
             is_running = false;
         else
-            std::cout << "Invalid epsylon";
+            std::cout << "Invalid epsylon" << std::endl;
     }
 
     double matrix[mth::MAX_SIZE][mth::MAX_SIZE];
